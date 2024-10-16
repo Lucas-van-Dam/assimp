@@ -1,7 +1,7 @@
 project "assimp"
   kind "StaticLib"
   language "C++"
-  cppdialect "C++17"
+  cppdialect "C++20"
   staticruntime "on"
 
   targetdir ("Binaries/" ..OutputDir.. "/%{prj.name}")
@@ -141,6 +141,7 @@ project "assimp"
       "contrib/rapidjson/include",
   }
 
+  filter {"files:**.cpp", "files:**.h"}
 
    filter "system:windows"
       systemversion "latest"
