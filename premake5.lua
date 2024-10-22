@@ -1,7 +1,7 @@
 project "assimp"
   kind "StaticLib"
   language "C++"
-  cppdialect "C++20"
+  cppdialect "C++17"
   staticruntime "on"
 
   targetdir ("Binaries/" ..OutputDir.. "/%{prj.name}")
